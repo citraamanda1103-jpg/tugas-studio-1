@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PenyewaanController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource('penyewaan', PenyewaanController::class);
